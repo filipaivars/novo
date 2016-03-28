@@ -13,7 +13,6 @@ angular
     'ngAnimate',
     'ngAria',
     'ngCookies',
-    'ngMessages',
     'ngResource',
     'ngRoute',
     'ngSanitize',
@@ -30,6 +29,16 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
+      })
+      .when('/question', {
+        templateUrl: 'views/question.html',
+        controller: 'QuestionCtrl',
+        controllerAs: 'question'
+      })
+      .when('/searchResults',{
+        templateUrl: 'views/searchResults.html',
+        controller: 'searchResultsCtrl',
+        controllerAs: 'searchResults'
       })
       .otherwise({
         redirectTo: '/'
